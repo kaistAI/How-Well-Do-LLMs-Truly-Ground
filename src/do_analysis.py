@@ -23,10 +23,10 @@ def cal_f1(p_score, g_score):
 qId2pop = json.load(open("id2pop.json"))
 qId2type = json.load(open("id2split.json")) 
 
-#fname = "/net/nfs.cirrascale/s2-research/amyl/EGQA/results2/no_instruction_False.vicuna-7b-v1.5/cross_nli_para.json"
-#fname = "/net/nfs.cirrascale/s2-research/amyl/EGQA/results2_revised/no_instruction_False.tulu-65b-recovered/cross_nli_para.json"
-fname = "/net/nfs.cirrascale/s2-research/amyl/EGQA/results2_distractor/no_instruction_False.Llama-2-13b-hf.2048/cross_nli_para.json"
-#fname = "/net/nfs.cirrascale/s2-research/amyl/EGQA/results2_revised_distractor/no_instruction_False.tulu-65b-recovered.2048/cross_nli_para.json"
+#fname = "results2/no_instruction_False.vicuna-7b-v1.5/cross_nli_para.json"
+#fname = "results2_revised/no_instruction_False.tulu-65b-recovered/cross_nli_para.json"
+fname = "results2_distractor/no_instruction_False.Llama-2-13b-hf.2048/cross_nli_para.json"
+#fname = "results2_revised_distractor/no_instruction_False.tulu-65b-recovered.2048/cross_nli_para.json"
 print(f'### Loading file .. {fname}')
 f = json.load(open(fname))
 
